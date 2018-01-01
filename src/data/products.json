@@ -1,0 +1,39 @@
+[
+    {
+        "id": "rp-001",
+        "name": "Rolle Pro",
+        "mainCopy": "<h3><ul><li>Faster</li><li>Better</li><li>Smarter</li></ul></h3><br>Rolle Pro saves you time and money on installation and ensures superior quality.<br>Better results in less time - it pays for itself the first time you use it.",
+        "imgUrl": "assets/img/rollepro.jpg",
+        "slides": [
+            {
+                "imgUrl": "assets/img/rolleprovideo1_still.jpg",
+                "linkUrl": "https://youtu.be/M12QAFlzzVU",
+                "label": "Rolle Pro Demo",
+                "description": "Rolle Pro demo by Don Ivers.",
+                "id": "rolle_pro_demo"
+            },
+            {
+                "imgUrl": "assets/img/rolleprovideo2_still.jpg",
+                "linkUrl": "https://youtu.be/DqnYeCIHpIw",
+                "label": "Rolle Pro Truck Wrap",
+                "description": "Use the Rolle Pro for truck wraps.",
+                "id": "rolle_pro_truck_demo"
+            }            
+        ]
+    },
+    {
+        "id": "ss-001",
+        "name": "Super Squeegee",
+        "mainCopy": "Best dang squeegee out there. Faster. Better. Smarter.",
+        "imgUrl": "assets/img/squeegee_test.jpg",        
+        "slides": [
+            {
+                "imgUrl": "assets/img/RolleProSteps.png",
+                "linkUrl": "#",
+                "label": "Super Squeegee",
+                "description": "How to use Super Squeegee.",
+                "id": "super_squeegee_main"
+            }
+        ]
+    }
+]

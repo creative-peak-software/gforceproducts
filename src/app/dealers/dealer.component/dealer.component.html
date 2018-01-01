@@ -1,0 +1,29 @@
+<div *ngIf="dealers && dealers.length > 0;else no_product">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron">
+            <div *ngFor="let dealer of dealers" class="row">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">{{dealer.dealerInfo.name}}</h4>
+                  <h6 class="text-muted card-subtitle mb-2">{{dealer.description}}</h6>
+                  <p *ngIf="dealer.dealerInfo.address.city && dealer.dealerInfo.address.state" class="card-text">{{dealer.dealerInfo.address.city}}, {{dealer.dealerInfo.address.state}}</p>
+                  <a href="{{dealer.website}}" target="_blank" class="card-link">Visit Website</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #no_dealers>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>No Dealers Found!</h1>
+      </div>
+    </div>
+  </div>
+</ng-template>

@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="gf-page-title">Learn - Videos and Demos</h1>
+    </div>
+  </div>
+</div>
+
+<div *ngFor="let product of products" class="container">
+  <div class="row">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>{{product.name}} Tutorials and Demonstrations</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div *ngFor="let slide of product.slides" class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">{{slide.label}}</h4>
+              <h6 class="text-muted card-subtitle mb-2">Video</h6>
+              <img src="{{slide.imgUrl}}" />
+              <p class="card-text">{{slide.description}}</p>
+              <a href="{{slide.linkUrl}}" target="_blank" class="card-link">Watch Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

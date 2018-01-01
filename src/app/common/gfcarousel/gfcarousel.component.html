@@ -1,0 +1,11 @@
+<div *ngIf="slideData !== undefined && slideData.length > 0" class="gf-carousel-container">
+<ngb-carousel>
+    <ng-template ngbSlide *ngFor="let slide of slideData" [id]="slide.id">
+        <img class="d-block w-100" [src]="slide.imgUrl" [alt]="slide.label">
+        <div class="carousel-caption">
+          <h3>{{slide.label}}</h3>
+          <p>{{slide.description}}</p>
+        </div>
+	</ng-template>
+</ngb-carousel>
+</div>

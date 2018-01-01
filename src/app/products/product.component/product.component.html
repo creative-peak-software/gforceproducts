@@ -1,0 +1,57 @@
+<div *ngIf="product;else no_product">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="gf-page-title">{{product.name}}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col">
+                <p><span [innerHTML]="product.mainCopy"></span></p>
+            </div>
+            <div class="col">
+              <img src="{{product.imgUrl}}" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngFor="let slide of product.slides" class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">{{slide.label}}</h4>
+            <h6 class="text-muted card-subtitle mb-2">Video</h6>
+            <img src="{{slide.imgUrl}}" />
+            <p class="card-text">{{slide.description}}</p>
+            <a href="{{slide.linkUrl}}" target="_blank" class="card-link">Watch Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #no_product>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 style="color:rgb(255,255,255);">Product Not Found!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col">
+              <p>Oops! We couldn't find the product you are looking for. Use the menues at the top of the page to find the product
+                of interest.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
