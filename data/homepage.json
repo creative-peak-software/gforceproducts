@@ -1,0 +1,23 @@
+[
+    {
+        "imgUrl": "assets/img/RolleProSteps.png",
+        "linkUrl": "#",
+        "label": "Home Slide 1", 
+        "description": "This is home slide 1.", 
+        "id": "home_slide_1"
+    },
+    {
+        "imgUrl": "assets/img/RolleProSteps.png",
+        "linkUrl": "#",
+        "label": "Home Slide 2", 
+        "description": "This is home slide 2.", 
+        "id": "home_slide_2"    
+    },
+    {
+        "imgUrl": "assets/img/RolleProSteps.png",
+        "linkUrl": "#",
+        "label": "Home Slide 3", 
+        "description": "This is home slide 3.", 
+        "id": "home_slide_3"    
+    }
+]
