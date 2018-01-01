@@ -3,7 +3,7 @@
 		<a class="navbar-brand" [routerLink]="['home']">
 			<img src="assets/img/GFLogoTrans.png" class="logo" style="height:90px">
 		</a>
-		<button class="navbar-toggler" type="button" (click)="navCollapsed = !navCollapsed" [attr.aria-expanded]="!navbarCollapsed" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" >
+		<button class="navbar-toggler" type="button" (click)="navCollapsed = !navCollapsed" [attr.aria-expanded]="!navCollapsed" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" >
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" [ngbCollapse]="navCollapsed" id="mainNav">
