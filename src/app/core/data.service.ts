@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { Observable } from 'rxJs/Rx';
+import { Observable } from 'rxJs/Observable';
 
 import { CarouselData } from './../common/gfcarousel/carouseldata';
 import { Dealer } from './../dealers/dealer';

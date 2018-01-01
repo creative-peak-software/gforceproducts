@@ -10,11 +10,13 @@ import { Product } from '../../products/product';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  private productList: Product[] = [];
+  public productList: Product[] = [];
+  public navCollapsed: boolean;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.navCollapsed = (window.screen.width > 767);
     this.dataService.getAllProducts().subscribe(p => this.productList = p);
   }
 

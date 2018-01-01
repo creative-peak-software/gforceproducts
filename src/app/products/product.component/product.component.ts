@@ -9,8 +9,7 @@ import { Product } from '../product';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  private product: Product;
-  private prods: Product[] = [];
+  public product: Product;
 
   constructor(private route: ActivatedRoute, private dataService: DataService) {
   }

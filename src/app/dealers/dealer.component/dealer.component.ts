@@ -10,7 +10,7 @@ import { DataService } from './../../core/data.service';
   styleUrls: ['./dealer.component.css']
 })
 export class DealerComponent implements OnInit {
-  private dealers: Dealer[] = [];
+  public dealers: Dealer[] = [];
 
   constructor(private dataService: DataService) { }
 

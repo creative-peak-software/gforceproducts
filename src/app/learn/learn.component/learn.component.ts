@@ -9,7 +9,7 @@ import { Product } from '../../products/product';
   styleUrls: ['./learn.component.css']
 })
 export class LearnComponent implements OnInit {
-  private products: Product[];
+  public products: Product[];
 
   constructor(private dataService: DataService) { }
 
